@@ -41,9 +41,9 @@ function sleep(time: number) {
 
 const Hero = () => {
   const [text, setText] = useState("")
-  const textLoop: string[] = ["Reuse", "Reduce", "Recycle"]
 
   useEffect(() => {
+    const textLoop: string[] = ["Reuse", "Reduce", "Recycle"]
     ;(async function () {
       while (true) {
         for (let i = 0; i < textLoop.length; i++) {

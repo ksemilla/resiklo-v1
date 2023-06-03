@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default () => {
+const Nav = () => {
   return (
     <nav className="p-4 sticky top-0 flex justify-between items-center">
       <div>
@@ -19,3 +19,5 @@ export default () => {
     </nav>
   )
 }
+
+export default Nav

@@ -20,7 +20,8 @@ export default function RootLayout({
         <script
           src="https://kit.fontawesome.com/7fe62f3f23.js"
           crossOrigin="anonymous"
-        ></script>
+          defer
+        />
       </head>
       <body className={inter.className}>
         <Nav />
