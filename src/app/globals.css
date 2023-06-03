@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +24,48 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-right {
+  animation: slide-right 1.5s forwards;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 1.5s forwards;
+}
+
+@keyframes k-blinker {
+  0% {
+    border-right: 2px solid transparent;
+  }
+  50% {
+    border-right: 2px solid;
+  }
+  100% {
+    border-right: 2px solid transparent;
+  }
+}
+
+.blinker {
+  animation: k-blinker 1s step-start infinite;
 }
