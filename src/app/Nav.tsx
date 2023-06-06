@@ -2,6 +2,7 @@
 
 import { classNames } from "@/utils"
 import Image from "next/image"
+import Link from "next/link"
 import { useEffect, useState } from "react"
 
 const Nav = () => {
@@ -26,19 +27,36 @@ const Nav = () => {
       )}
     >
       <div>
-        <Image
-          src="/resiklo.png"
-          width={180}
-          height={0}
-          alt="resiklo-lettering"
-          priority
-          className="h-auto"
-        />
+        <Link href="/">
+          <Image
+            src="/resiklo.png"
+            width={180}
+            height={0}
+            alt="resiklo-lettering"
+            priority
+            className="h-auto"
+          />
+        </Link>
       </div>
-      <div className="flex items-center space-x-10">
-        <span>Products</span>
-        <span>About</span>
-        <span>Contact Us</span>
+      <div className="flex items-center space-x-10 h-[50px]">
+        <Link
+          href="/products"
+          className="text-gray-800 h-full flex items-center border-b-2 border-transparent hover:border-blue-900 hover:text-blue-900"
+        >
+          PRODUCTS
+        </Link>
+        <Link
+          href="/about"
+          className="text-gray-800 h-full flex items-center border-b-2 border-transparent hover:border-blue-900 hover:text-blue-900"
+        >
+          ABOUT
+        </Link>
+        <Link
+          href="/contact-us"
+          className="h-full flex items-center border border-blue-900 rounded-full px-6 text-blue-900 hover:text-white hover:bg-blue-900"
+        >
+          CONTACT US
+        </Link>
       </div>
     </nav>
   )

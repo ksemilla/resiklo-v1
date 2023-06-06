@@ -50,15 +50,12 @@ export default function LineTracker(props: {
     >
       <div
         className={classNames(
-          `bg-gray-400 h-full w-full transition-all duration-[${duration}ms] ease-linear`,
+          `bg-gray-500 h-full w-full transition-all duration-[${duration}ms] ease-linear`,
           direction === "tl" && !trigger ? `translate-x-[${width}]` : "",
           direction === "tr" && !trigger ? `-translate-x-[${width}]` : "",
           direction === "tt" && !trigger ? `translate-y-[${height}]` : "",
           trigger ? "translate-y-0 translate-x-0" : ``
         )}
-        // style={{
-        //   transform: `${trigger ? "translateX(0)" : `translateX(${width})`}`,
-        // }}
       ></div>
     </div>
   )
