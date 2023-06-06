@@ -139,7 +139,7 @@ const Products = () => {
       <div className="grid grid-cols-3 gap-4">
         <div className="col-span-1 flex flex-col space-y-4 pt-20">
           <div
-            className="bg-gray-50 border border-transparent rounded-md w-full h-64  flex justify-center items-center pt-10 relative hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
+            className="bg-gray-50 border border-transparent rounded-md w-full h-64  flex justify-center items-center relative hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
             onMouseEnter={() => {
               setOpacity(0)
               setZ(0)
@@ -155,13 +155,7 @@ const Products = () => {
             }}
           >
             <div style={{ opacity: opacityList[0] }}>
-              <Image
-                src="/shredder-box-ss.png"
-                width={180}
-                height={180}
-                alt="shredder-box-ss"
-                className="h-auto"
-              />
+              <img src="/shredder-box-ss.png" alt="shredder-box-ss" />
             </div>
             <div className="absolute -top-[58px] right-[52px] pointer-events-none">
               <LineTracker
@@ -208,13 +202,7 @@ const Products = () => {
             }}
           >
             <div style={{ opacity: opacityList[1] }}>
-              <Image
-                src="/extrusion.png"
-                width={180}
-                height={200}
-                alt="extrusion"
-                className="h-auto"
-              />
+              <img src="/extrusion.png" alt="extrusion" />
             </div>
             <div className="absolute top-[120px] -right-[50px] pointer-events-none">
               <LineTracker
@@ -263,13 +251,7 @@ const Products = () => {
             }}
           >
             <div style={{ opacity: opacityList[2] }}>
-              <Image
-                src="/plastic-injection.png"
-                width={140}
-                height={200}
-                alt="plastic-injection"
-                className="h-auto"
-              />
+              <img src="/plastic-injection.png" alt="plastic-injection" />
             </div>
             <div className="absolute top-[120px] -right-[85px] pointer-events-none">
               <LineTracker
@@ -316,13 +298,7 @@ const Products = () => {
             }}
           >
             <div style={{ opacity: opacityList[3] }}>
-              <Image
-                src="/shredder.png"
-                width={160}
-                height={200}
-                alt="shredder"
-                className="h-auto"
-              />
+              <img src="/shredder.png" alt="shredder" />
             </div>
             <div className="absolute top-[120px] -left-[120px] pointer-events-none">
               <LineTracker
@@ -371,13 +347,7 @@ const Products = () => {
             }}
           >
             <div style={{ opacity: opacityList[4] }}>
-              <Image
-                src="/extrusion.png"
-                width={200}
-                height={200}
-                alt="extrusion"
-                className="h-auto"
-              />
+              <img src="/extrusion.png" alt="extrusion" />
             </div>
             <div className="absolute top-[123px] -left-[75px] pointer-events-none">
               <LineTracker
@@ -414,13 +384,7 @@ const Products = () => {
             }}
           >
             <div style={{ opacity: opacityList[5] }}>
-              <Image
-                src="/shredder-box-ms.png"
-                width={200}
-                height={200}
-                alt="shredder-box-ms"
-                className="h-auto"
-              />
+              <img src="/shredder-box-ms.png" alt="shredder-box-ms" />
             </div>
             <div className="absolute top-[120px] -left-[160px] pointer-events-none">
               <LineTracker
@@ -467,13 +431,7 @@ const Products = () => {
             }}
           >
             <div style={{ opacity: opacityList[6] }}>
-              <Image
-                src="/cutting-blades-ss.png"
-                width={160}
-                height={200}
-                alt="cutting-blades-ss"
-                className="h-auto"
-              />
+              <img src="/cutting-blades-ss.png" alt="cutting-blades-ss" />
             </div>
             <div className="absolute top-[120px] -left-[120px] pointer-events-none">
               <LineTracker
