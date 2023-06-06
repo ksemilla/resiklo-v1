@@ -69,3 +69,10 @@ body {
 .blinker {
   animation: k-blinker 1s step-start infinite;
 }
+
+.view-products:hover > i {
+  transform: translateX(5px);
+  transition: all;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+}

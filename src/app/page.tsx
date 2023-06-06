@@ -87,13 +87,13 @@ const Products = () => {
   const initialOpacity = { 0: 1, 1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1 }
   const initialZ = { 0: 1, 1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1 }
   const blurredOpacity: { [key: number]: number } = {
-    0: 0.2,
-    1: 0.2,
-    2: 0.2,
-    3: 0.2,
-    4: 0.2,
-    5: 0.2,
-    6: 0.2,
+    0: 0.1,
+    1: 0.1,
+    2: 0.1,
+    3: 0.1,
+    4: 0.1,
+    5: 0.1,
+    6: 0.1,
   }
   const lowZ: { [key: number]: number } = {
     0: -10,
@@ -134,7 +134,7 @@ const Products = () => {
       <div className="grid grid-cols-3 gap-4">
         <div className="col-span-1 flex flex-col space-y-4 pt-20">
           <div
-            className="bg-gray-50 rounded-md w-full h-64  flex justify-center items-center pt-10 relative hover:shadow-sm hover:bg-gray-50 hover:border hover:border-gray-100"
+            className="bg-gray-50 border border-transparent rounded-md w-full h-64  flex justify-center items-center pt-10 relative hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
             onMouseEnter={() => {
               setOpacity(0)
               setZ(0)
@@ -187,7 +187,7 @@ const Products = () => {
             </div>
           </div>
           <div
-            className="bg-gray-50 rounded-md w-full h-64 flex justify-center items-center pb-14 pl-4 relative hover:shadow-sm hover:bg-gray-50 hover:border hover:border-gray-100"
+            className="bg-gray-50 border border-transparent rounded-md w-full h-64 flex justify-center items-center pb-14 pl-4 relative hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
             onMouseEnter={() => {
               setOpacity(1)
               setTranslate2(true)
@@ -242,7 +242,7 @@ const Products = () => {
         </div>
         <div className="col-span-1 flex flex-col space-y-4 pt-32">
           <div
-            className="bg-gray-50 rounded-md w-full h-64 flex justify-center items-center relative hover:shadow-sm hover:bg-gray-50 hover:border hover:border-gray-100"
+            className="bg-gray-50 border border-transparent rounded-md w-full h-64 flex justify-center items-center relative hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
             onMouseEnter={() => {
               setOpacity(2)
               setTranslate3(true)
@@ -295,7 +295,7 @@ const Products = () => {
             </div>
           </div>
           <div
-            className="bg-gray-50 rounded-md w-full h-64 relative flex justify-center items-center hover:shadow-sm hover:bg-gray-50 hover:border hover:border-gray-100"
+            className="bg-gray-50 border border-transparent rounded-md w-full h-64 relative flex justify-center items-center hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
             onMouseEnter={() => {
               setOpacity(3)
               setTranslate4(true)
@@ -350,7 +350,7 @@ const Products = () => {
         </div>
         <div className="col-span-1 flex flex-col space-y-4 ">
           <div
-            className="bg-gray-50 rounded-md w-full h-64 flex justify-center items-center pb-14 pl-4 relative hover:shadow-sm hover:bg-gray-50 hover:border hover:border-gray-100"
+            className="bg-gray-50 border border-transparent rounded-md w-full h-64 flex justify-center items-center pb-14 pl-4 relative hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
             onMouseEnter={() => {
               setOpacity(4)
               setTranslate5(true)
@@ -393,7 +393,7 @@ const Products = () => {
             </div>
           </div>
           <div
-            className="bg-gray-50 rounded-md w-full h-64 flex justify-center items-center pt-12 relative hover:shadow-sm hover:bg-gray-50 hover:border hover:border-gray-100"
+            className="bg-gray-50 border border-transparent rounded-md w-full h-64 flex justify-center items-center pt-12 relative hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
             onMouseEnter={() => {
               setOpacity(5)
               setTranslate6(true)
@@ -446,7 +446,7 @@ const Products = () => {
             </div>
           </div>
           <div
-            className="bg-gray-50 rounded-md w-full h-64 flex justify-center items-center relative hover:shadow-sm hover:bg-gray-50 hover:border hover:border-gray-100"
+            className="bg-gray-50 border border-transparent rounded-md w-full h-64 flex justify-center items-center relative hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
             onMouseEnter={() => {
               setOpacity(6)
               setTranslate7(true)
@@ -501,7 +501,9 @@ const Products = () => {
         </div>
       </div>
       <div className="text-center">
-        <a href="#">View all products</a>
+        <a href="#" className="font-medium view-products hover:text-blue-900">
+          View all products <i className="fa-solid fa-arrow-right text-sm"></i>
+        </a>
       </div>
     </section>
   )
