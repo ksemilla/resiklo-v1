@@ -186,7 +186,7 @@ const Products = () => {
             </div>
           </div>
           <div
-            className="bg-gray-50 border border-transparent rounded-md w-full h-64 flex justify-center items-center pb-14 pl-4 relative hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
+            className="bg-gray-50 border border-transparent rounded-md w-full h-64 flex justify-center items-center relative hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
             onMouseEnter={() => {
               setOpacity(1)
               setTranslate2(true)
@@ -331,7 +331,7 @@ const Products = () => {
         </div>
         <div className="col-span-1 flex flex-col space-y-4 ">
           <div
-            className="bg-gray-50 border border-transparent rounded-md w-full h-64 flex justify-center items-center pb-14 pl-4 relative hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
+            className="bg-gray-50 border border-transparent rounded-md w-full h-64 flex justify-center items-center relative hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
             onMouseEnter={() => {
               setOpacity(4)
               setTranslate5(true)
@@ -368,7 +368,7 @@ const Products = () => {
             </div>
           </div>
           <div
-            className="bg-gray-50 border border-transparent rounded-md w-full h-64 flex justify-center items-center pt-12 relative hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
+            className="bg-gray-50 border border-transparent rounded-md w-full h-64 flex justify-center items-center relative hover:shadow-sm hover:bg-gray-50 hover:border-gray-100"
             onMouseEnter={() => {
               setOpacity(5)
               setTranslate6(true)
