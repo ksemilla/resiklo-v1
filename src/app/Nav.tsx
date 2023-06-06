@@ -1,11 +1,8 @@
 "use client"
 
+import { classNames } from "@/utils"
 import Image from "next/image"
 import { useEffect, useState } from "react"
-
-const classNames = (...classes: string[]) => {
-  return classes.filter(Boolean).join(" ")
-}
 
 const Nav = () => {
   const [scrollPosition, setScrollPosition] = useState(0)
@@ -32,9 +29,10 @@ const Nav = () => {
         <Image
           src="/resiklo.png"
           width={180}
-          height={100}
+          height={0}
           alt="resiklo-lettering"
           priority
+          className="h-auto"
         />
       </div>
       <div className="flex items-center space-x-10">

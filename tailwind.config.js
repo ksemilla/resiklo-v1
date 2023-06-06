@@ -18,4 +18,13 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    ...[...Array(1000).keys()].flatMap((i) => [
+      `translate-x-[${i}px]`,
+      `-translate-x-[${i}px]`,
+      `translate-y-[${i}px]`,
+      `-translate-y-[${i}px]`,
+    ]),
+    "duration-[100ms]",
+  ],
 }
