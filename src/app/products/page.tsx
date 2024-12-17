@@ -1,5 +1,6 @@
 import { products } from "@/const"
 import Link from "next/link"
+import { Footer } from "../page"
 
 const Products = () => {
   return (

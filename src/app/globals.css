@@ -6,73 +6,29 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+html,
+body {
+  height: 100%;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
-@keyframes slide-right {
-  from {
-    transform: translateX(-10px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.animate-slide-right {
-  animation: slide-right 1s forwards;
-}
-
-@keyframes slide-left {
-  from {
-    transform: translateX(10px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-.animate-slide-left {
-  animation: slide-left 1s forwards;
-}
-
-@keyframes k-blinker {
-  0% {
-    border-right: 2px solid transparent;
-  }
-  50% {
-    border-right: 2px solid;
-  }
-  100% {
-    border-right: 2px solid transparent;
-  }
-}
-
-.blinker {
-  animation: k-blinker 1s step-start infinite;
+  display: flex;
+  flex-direction: column;
 }
 
 .view-products:hover > i {
   transform: translateX(5px);
   transition: all;
-  transition-duration: 500ms;
+  transition-duration: 100ms;
   transition-timing-function: ease-in-out;
 }

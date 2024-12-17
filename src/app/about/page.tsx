@@ -7,8 +7,9 @@ export default function Example() {
             Meet our leadership
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae
-            elementum enim vitae ullamcorper suspendisse.
+            We are the driving force behind seamless manufacturing. With a
+            relentless focus on quality, efficiency, and safety, our team
+            transforms materials into engineered products that impact lives.
           </p>
         </div>
         <ul
